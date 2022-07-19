@@ -1,4 +1,10 @@
+<?php
+
+?>
+
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -40,13 +46,16 @@
                 </div>
 
             </div>
-            <p style="margin-left:20px">Helpful: <span class="RatingAmount"></span></p>
+        </div>
+        <form action="thankyou.php" method="post">
+            <p class="helpful_p">Helpful: <input type="hidden" name="ratings" id="ratings"></p>
 
-        </div>
-        <div style="display:flex">
-            <button type="submit" class="average" method="post">Submit</button>
-            <button type="button" class="average" onclick="average()">Average</button>
-        </div>
+            
+            <div style="display:flex">
+                <button type="submit" class="average" method="post">Submit</button>
+                <button type="button" class="average" onclick="average()">Average</button>
+            </div>
+        </form>
     </main>
 
 </body>

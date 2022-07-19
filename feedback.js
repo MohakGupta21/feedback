@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
       token.style.display="flex";
       
       var rating = this.getAttribute("data-rating");
-      document.querySelector(".RatingAmount").innerText = rating;
+      let r =document.getElementById("ratings");
+      r.setAttribute("value", `${rating}`);
       return SetRatingStar(rating, stars);
     });
   });
